@@ -61,3 +61,21 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+var inbox = require('inbox');
+
+var options = {
+    auth: {
+        user: 'n1ck_kharkov@mail.ru',
+        pass: 'n3n99n777'
+    }
+};
+
+inbox.createConnection(995, 'pop.mail.ru', options);
+
+inbox.connect();
+
+inbox.on('connect', function () {
+
+});
+
