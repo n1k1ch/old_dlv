@@ -1,1 +1,1 @@
-console.log('hie');
+console.log(process.argv);
